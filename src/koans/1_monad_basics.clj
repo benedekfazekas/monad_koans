@@ -21,10 +21,10 @@
     ((monad-compose f1 f2) 5))
 
  "Do you think it is comp what you are doing? hm..."
- (= ((fn [x] (domonad __ [a (f2 x)
-                         b (f1 a)]
-                     b)) 10)
-    ((fn [x] (->> x f2 (mapcat f1))) 10))
+ (= [9 10 11 99 100 101]
+    ((fn [x] (domonad sequence-m [a (__ x)
+                                 b (__ a)]
+                     b)) 10))
 
  "Dynamic balance means lots of movement but no change
 Relize that the increment and decrement functions are monadic values for the state monad"

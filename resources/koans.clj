@@ -3,7 +3,8 @@
 
 [["1_monad_basics" {"__" [mapcat
                           [x]
-                          sequence-m
+                          f2
+                          f1
                           "incremented!"
                           "decremented!"
                           "incremented!"
