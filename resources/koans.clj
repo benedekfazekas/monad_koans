@@ -4,18 +4,19 @@
 [["1_monad_basics" {"__" [mapcat
                           [x]
                           f2
-                          f1
-                          "incremented!"
-                          "decremented!"
-                          "incremented!"
-                          6
-                          "decremented!"
-                          "incremented!"
-                          6
-                          "decremented!"
-                          42]}]
+                          f1]}]
 
- ["2_parser" {"__" [1234567890
+ ["2_state_monad" {"__" ["incremented!"
+                         "decremented!"
+                         "incremented!"
+                         6
+                         "decremented!"
+                         "incremented!"
+                         6
+                         "decremented!"
+                         42]}]
+
+ ["3_parser" {"__" [1234567890
                     alpha
                     (one-of "_-.")
                     digit
