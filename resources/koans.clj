@@ -7,10 +7,11 @@
                               f1
                               symbols
                               numbers
-                              symbols
-                              numbers
-                              1
-                              b
+                              [:a :b]
+                              [1 2]
+                              f1
+                              f2
+                              f1
                               #{2 3 4 5 6}
                               6]}]
 
