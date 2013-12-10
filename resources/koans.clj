@@ -2,9 +2,17 @@
 ;; contain a koan name and a map of koan answers, in that order.
 
 [["1_container_monads" {"__" [mapcat
-                          [x]
-                          f2
-                          f1]}]
+                              [x]
+                              f2
+                              f1
+                              symbols
+                              numbers
+                              symbols
+                              numbers
+                              1
+                              b
+                              #{2 3 4 5 6}
+                              6]}]
 
  ["2_state_monad" {"__" ["incremented!"
                          "decremented!"
