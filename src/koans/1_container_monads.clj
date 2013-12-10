@@ -4,6 +4,12 @@
 
 (defn f2 [x] [x (square x)])
 
+(defn as-set [x] (fn [y] (apply hash-set (x y))))
+
+(def f1-set (as-set f1))
+
+(def f2-set (as-set f2))
+
 (defn monad-bind [monad-value monad-function] (__ monad-function monad-value))
 
 (defn monad-result [x] __)
@@ -21,6 +27,16 @@
     ((fn [x] (domonad sequence-m [a (__ x)
                                  b (__ a)]
                      b)) 10))
+
+ (with-monad sequence-m
+   "Function composition is easy"
+   (= __
+      ((m-chain [f2 f1]) 2)))
+
+ (with-monad set-m
+   "Function composition is easy"
+   (= __
+      ((m-chain [f2-set f1-set]) 2)))
 
  "Just take a moment to comprehend list comprehension"
  (= [[:a 1] [:a 2] [:b 1] [:b 2]]
@@ -56,5 +72,4 @@
  (= __
     (domonad identity-m [a (square 2)
                          b (inc a)]
-             (+ b 1)))
- )
+             (+ b 1))))

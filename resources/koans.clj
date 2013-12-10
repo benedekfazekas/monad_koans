@@ -5,6 +5,8 @@
                               [x]
                               f2
                               f1
+                              [1 2 3 3 4 5]
+                              #{1 2 3 4 5}
                               symbols
                               numbers
                               [:a :b]
