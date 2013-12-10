@@ -28,15 +28,13 @@
                                  b (__ a)]
                      b)) 10))
 
- (with-monad sequence-m
-   "Function composition is easy"
-   (= __
-      ((m-chain [f2 f1]) 2)))
+ "Function composition is easy"
+ (= __
+    ((with-monad sequence-m (m-chain [f2 f1])) 2))
 
- (with-monad set-m
-   "Function composition is easy"
-   (= __
-      ((m-chain [f2-set f1-set]) 2)))
+ "Different data types imply different container monads"
+ (= __
+    ((with-monad set-m (m-chain [f2-set f1-set])) 2))
 
  "Just take a moment to comprehend list comprehension"
  (= [[:a 1] [:a 2] [:b 1] [:b 2]]
