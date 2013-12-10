@@ -1,7 +1,7 @@
 # monad-koans
 
 Koans are an excellent way to understand language concepts in an active, coding way. This project is dedicated to understanding monads in clojure. So it is somewhat assumed that monad padawans know a bit of clojure when they get here.
-Current monad koans are based on [Jim Duey's tutorial](http://www.intensivesystems.net/tutorials/monads_101.html). More to follow.
+Current monad koans are based on [Jim Duey's tutorial](http://www.intensivesystems.net/tutorials/monads_101.html); [his presentation](http://www.infoq.com/presentations/Monads-Made-Easy) worths a look as well.
 
 ### Running the Koans
 
