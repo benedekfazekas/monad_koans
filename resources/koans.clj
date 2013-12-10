@@ -6,18 +6,19 @@
                               f2
                               f1
                               [1 2 3 3 4 5]
-                              #{1 2 3 4 5}
-                              symbols
-                              numbers
-                              [:a :b]
-                              [1 2]
-                              f1
-                              f2
-                              f1
-                              #{2 3 4 5 6}
-                              6]}]
+                              #{1 2 3 4 5}]}]
 
- ["2_state_monad" {"__" ["incremented!"
+ ["2_comprehensions" {"__" [symbols
+                            numbers
+                            [:a :b]
+                            [1 2]
+                            f1
+                            f2
+                            f1
+                            #{2 3 4 5 6}
+                            6]}]
+
+ ["3_state_monad" {"__" ["incremented!"
                          "decremented!"
                          "incremented!"
                          6
@@ -27,7 +28,7 @@
                          "decremented!"
                          42]}]
 
- ["3_parser" {"__" [1234567890
+ ["4_parser" {"__" [1234567890
                     alpha
                     (one-of "_-.")
                     digit
