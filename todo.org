@@ -1,7 +1,3 @@
-# containers
-
-- maybe monad as special case of sequence monad
-
 # state monad
 
 - add random seed example from duey

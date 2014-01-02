@@ -6,6 +6,7 @@
                               f2
                               f1
                               [1 2 3 3 4 5]
+                              nil
                               #{1 2 3 4 5}]}]
 
  ["2_comprehensions" {"__" [symbols

@@ -32,6 +32,10 @@
  (= __
     ((with-monad sequence-m (m-chain [f2 f1])) 2))
 
+ "Nil safety is easy"
+ (= __
+    ((with-monad maybe-m (m-chain [f2 f1])) nil))
+
  "Different data types imply different container monads"
  (= __
     ((with-monad set-m (m-chain [f2-set f1-set])) 2)))
