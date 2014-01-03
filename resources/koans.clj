@@ -19,7 +19,8 @@
                             #{2 3 4 5 6}
                             6]}]
 
- ["3_state_monad" {"__" ["incremented!"
+ ["3_state_monad" {"__" [inc
+                         "incremented!"
                          "decremented!"
                          "incremented!"
                          6
@@ -27,7 +28,10 @@
                          "incremented!"
                          6
                          "decremented!"
-                         42]}]
+                         42
+                         next-rand-int
+                         next-rand-int
+                         next-rand-int]}]
 
  ["4_parser" {"__" [1234567890
                     alpha
