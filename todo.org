@@ -1,3 +1,1 @@
-# state monad
-
-- add random seed example from duey
+nothing currently
